@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<siteMap>
+  <siteMapNode>
+    <siteMapNode url="~/Polls.aspx" title="網路票選系統"/>     
+  </siteMapNode>   
+</siteMap>
+

@@ -1,0 +1,39 @@
+<%@ Master Language="VB" %>
+<html>
+<head Runat="server"><title>主版頁面</title></head>
+<body>
+<form Runat="server">  
+  <table cellpadding="0" cellspacing="0" border="0">
+   <tr height="50px" valign="middle" align="left">
+    <td colspan="2" bgcolor="#507CD1">
+      <font size="6" face="impact" color="white">&nbsp;
+        ASP.NET 2.0 網路投票系統
+      </font></td></tr>
+   <tr height="10px" valign="middle" align="right">
+    <td colspan="2" bgcolor="#EFF3FB">&nbsp;</td></tr>    
+   <tr height="300px"> 
+    <td width="150px" valign="top" align="center"
+                      bgcolor="#EFF3FB">
+       <!-- 主選單 -->
+       <asp:Label Text="主選單" Runat="server"
+            BackColor="#B5C7DE" ForeColor="#507CD1"
+            Font-Bold="True" Width="150px"/><br>
+       <asp:SiteMapDataSource Id="menu" Runat="server"
+            ShowStartingNode="False"/>
+       <asp:Menu Id="site" Runat="server"
+            DataSourceID="menu" Width="130"
+            StaticMenuItemStyle-ForeColor="#507CD1"
+            StaticHoverStyle-ForeColor="white"
+            StaticHoverStyle-BackColor="black"/></td>   
+    <td width="600px" valign="top">
+       <table cellspacing="5" cellpadding="5" border="0">
+         <tr><td>
+           <asp:ContentPlaceHolder Id="content" 
+                                   Runat="server"/>
+         </td></tr>
+       </table>
+    </td></tr>   
+  </table>
+</form>
+</body>
+</html>
